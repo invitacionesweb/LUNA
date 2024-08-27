@@ -312,10 +312,27 @@ nav {
     width: 94px;
 }
 .lovestory {
+    height;
     background-color: var(--color-cuartro);
     width: 96vw;
     margin: auto;
-    
+    background-image: url(./IMAGENES/fondoverde.png);
+    display: flex;
+    text-align: center;
+    font-family: var(--font-principal);
+}
+.lovestory-1 h3{
+    font-family: var(--font-principal);
+    color: var(--color-secundario);
+
+}
+.lovestory .lovestory-1 {
+    padding: 40px 40px ;
+
+}
+.lovestory img {
+    width: 100%;
+    padding: 8px;
 }
 /* Responsiveness */
 @media (max-width: 768px) {
@@ -404,5 +421,8 @@ nav {
 .timeline .iconos {
     flex-direction: column;
     
+}
+.lovestory {
+    flex-direction: column;
 }
 }

@@ -4,6 +4,7 @@
     --color-terciario:rgba(62, 57, 48, 0.9);
     --font-principal: "Antic Didone", serif;
     --font-secundaria:"EB Garamond", serif;;
+    --color-cuartro:#DBDBD1;
 }
 
 * {
@@ -289,6 +290,7 @@ nav {
     font-family: var(--font-principal);
     color: var(--color-secundario);
     padding: 8px 0;
+    margin: auto;
     
 }
 .timeline img {
@@ -297,14 +299,23 @@ nav {
     margin: auto;
 }
 .timeline .iconos {
-    width: 100vw;
+    width: 60vw;
+    margin: auto;
+    padding: auto;
     height: auto;
     display: flex;
     text-align: center;
     gap: 10px;
+   
 }
 .iconos img {
     width: 94px;
+}
+.lovestory {
+    background-color: var(--color-cuartro);
+    width: 96vw;
+    margin: auto;
+    
 }
 /* Responsiveness */
 @media (max-width: 768px) {

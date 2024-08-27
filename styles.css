@@ -1,0 +1,397 @@
+:root {
+    --color-principal:#F5F6F6;
+    --color-secundario:#AF8858;
+    --color-terciario:rgba(62, 57, 48, 0.9);
+    --font-principal: "Antic Didone", serif;
+    --font-secundaria:"EB Garamond", serif;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-principal);
+    background-position: center center;
+    background-repeat: round;
+    background-size: contain;
+    overflow-x: hidden;
+
+}
+
+header {
+    background-color:var(--color-principal);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+.logo {
+    background-image:url(./IMAGENES/logo.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+
+}
+.logo h1 {
+    background-color:var(--color-principal);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-family: var(--font-principal);
+}
+
+.hamburger {
+    color: var(--color-secundario);
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--color-principal);
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: var(--color-principal);
+}
+
+.nav-links li {
+    display: inline;
+    background-color: var(--color-principal);
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--color-secundario);
+
+
+}
+
+.rsvp-btn {
+    background-color:var(--color-secundario);
+    color: var(--color-principal) !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('./IMAGENES/DSC07617.jpeg'); /* Placeholder for the background image */
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    margin-top:440px;
+    color: var(--color-principal);
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-family: var(--font-principal);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    font-family: var(--font-principal);
+}
+
+.hero p {
+    font-size: 18px;
+    font-family: var(--font-principal);
+}
+
+
+.inicio {
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.inicio p {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+}
+.inicio img {
+    width: 120px;
+    margin: auto;
+    padding: auto;
+}
+.fecha {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    border-top: 3px solid  rgba(62, 57, 48, 0.19);
+   border-top-style: double;
+   border-bottom: 3px solid  rgba(62, 57, 48, 0.19);
+   border-bottom-style: double;
+   
+
+}
+.fecha P {
+    font-family: var(--font-principal);
+    font-size: 26px;
+    color: var(--color-terciario);
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    
+    font-family: var(--font-principal);
+    color: var(--color-terciario);
+    
+   
+  
+}
+.details P {
+    margin: auto;
+    text-align: center;
+    max-width: 300px;
+   
+}
+.details h3{
+    letter-spacing: 0.2rem;
+    
+}
+.details div {
+    text-align: center;
+}
+.details .horarios {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+}
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.count {
+    text-align: center;
+    color: var(--color-secundario);
+
+}
+
+.count span {
+    font-size: 36px;
+    display: block;
+    font-family: var(--font-principal);
+
+}
+
+.count p {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    color: var(--color-terciario);
+
+}
+
+.boton {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px 20PX;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: var(--font-principal);
+    letter-spacing: 0.2rem;
+
+
+ }
+ .boton:hover {
+     color: var(--color-secundario);
+     background-color: var(--color-principal);
+     border: 1px solid var(--color-secundario);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.galeria img {
+    width: 25vw;
+    padding: 8px;
+}
+.f4 {
+    display: block;
+}
+.logoflor img{
+    width: 200px;
+}
+.logoflor {
+    position: absolute;
+    z-index: 3;
+    left: 1em;
+    top: 505px;
+    opacity: 0.9;
+    max-width: 100%; /* Limita su tamaño máximo para que no interfiera con el resto del contenido */
+}
+
+
+.logoflor2 img{
+    width: 200px;
+}
+.logoflor2 {
+    position: absolute;
+    z-index: 3;
+    left: 0em;
+    top: 905px;
+    opacity: 0.9;
+    max-width: 100%; /* Limita su tamaño máximo para que no interfiera con el resto del contenido */
+}
+
+
+/*TIMELINE*/
+.timeline {
+    margin: 10px 0 0 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-secundario);
+    
+
+}
+.timeline h3 {
+    
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-family: var(--font-principal);
+    color: var(--color-secundario);
+    padding: 8px 0;
+    
+}
+.timeline img {
+    width: 220px;
+    padding: auto;
+    margin: auto;
+}
+.timeline .iconos {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+.iconos img {
+    width: 94px;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-principal);
+        color: var(--color-secundario);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        padding: 0 0 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .logoflor {
+        max-width: 100vw; /* Se ajusta al ancho de la pantalla */
+        width: 60px; /* Ajusta el tamaño a algo más pequeño para móviles */
+        left: -65px; /* Ajusta la posición para que no interfiera con la imagen de fondo */
+        top: 750px;
+        z-index: 3;
+       
+    }
+    .logoflor2 {
+        max-width: 100vw; /* Se ajusta al ancho de la pantalla */
+        width: 100vw; /* Ajusta el tamaño a algo más pequeño para móviles */
+        top: 1360px;
+        overflow-x: hidden; /* También agregarlo a html */
+        transform: scaleX(-1);
+    }
+    .logoflor2 img {
+        margin-left: -90px;
+    }
+    
+   
+
+    .hero {
+        background-image: url('./FOTOS/backphone.png'); /* Placeholder for the background image */
+
+        padding-top: 60px; /* Agrega un poco más de espacio entre el logotipo y la imagen */
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Asegúrate de que el texto sea legible en pantallas pequeñas */
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.galeria img {
+    width: 100vw;
+}
+.f4 {
+    display: none;
+}
+
+.timeline .iconos {
+    flex-direction: column;
+    
+}
+}

@@ -183,6 +183,7 @@ nav {
 .details .horarios {
     color: var(--color-secundario);
     font-family: var(--font-secundaria);
+    letter-spacing: 0.2rem;
 }
 .countdown {
     display: flex;
@@ -323,8 +324,10 @@ nav {
     font-family: var(--font-principal);
 }
 .lovestory-1 h3{
-    font-family: var(--font-principal);
     color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
 
 }
 .lovestory .lovestory-1 {
@@ -337,18 +340,26 @@ nav {
 }
 
 .accordion {
-    padding: 40PX 0;
+    padding: 40PX 10PX;
     width: 100%;
-    max-width: 600px;
     margin: auto;
     background-color: var(--color-principal);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     font-family: var(--font-secundaria);
     color: var(--color-terciario);
+  
 }
-
+.accordion H3 {
+    color: var(--color-secundario);
+    font-family: var(--font-secundaria);
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    text-align: center;
+}
 .accordion-item {
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+    margin: 4PX;
+    font-family: var(--font-secundaria);
 }
 
 .accordion-item:last-child {
@@ -359,11 +370,12 @@ nav {
     border: 1PX SOLID var(--color-terciario);
     background-color:var(--color-principal);
     color: var(--color-terciario);
+    font-family: var(--color-secundario);
     padding: 15px;
     width: 100%;
     text-align: left;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     border: none;
     outline: none;
@@ -384,7 +396,8 @@ nav {
 .accordion-content p {
     padding: 15px 0;
     margin: 0;
-    color: #555;
+    color: var(--color-terciario);
+    font-family: var(--font-secundaria);
 }
 
 .accordion-item.active .accordion-content {
@@ -393,7 +406,7 @@ nav {
 }
 
 .accordion-item.active .accordion-header {
-    background-color: #ddd;
+    background-color: var(--color-cuartro);
 }
 
 /* Responsiveness */

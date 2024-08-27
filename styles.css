@@ -280,6 +280,7 @@ nav {
     display: flex;
     flex-direction: column;
     color: var(--color-secundario);
+    font-family: var(--font-principal);
     
 
 }

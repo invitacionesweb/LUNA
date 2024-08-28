@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">  </head>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+
 
     <body>
 
@@ -25,12 +28,11 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="rsvp-btn">RSVP</a></li>
+                <li><a href="#section1">Detalles</a></li>
+                <li><a href="#section2">Información</a></li>
+                <li><a href="#section3">Redes</a></li>
+
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-maDNvlU952yO2ByGrbj4tK0nwbPo2yJvkSEaj0bpXHaVNw/viewform?usp=sf_link" class="rsvp-btn">RSVP</a></li>
                 <br>
             </ul>
         </nav>
@@ -44,6 +46,9 @@
                 <p>Sábado, 04 Enero 2025</p>
             </div>
         </section>
+        <div class="audiodiv">
+            <audio controls .mejs-container autoplay src="./ben-e-king--stand-by-me-letra--video.mp3"></audio >
+        </div> 
         <section class="inicio">
 
                 <img data-aos="fade-up"  src="./IMAGENES/flower-2-1-800x373.png" alt="">
@@ -111,7 +116,7 @@
   -->
 
 
-    <div class="timeline">
+    <div  id="section1" class="timeline">
         <img data-aos="fade-up" src="./IMAGENES/flower-2-1-800x373.png" alt="">
         <br>
         <h3 data-aos="fade-up" >DETALLES</h3>
@@ -171,7 +176,7 @@
     
 
 
-    <div class="accordion">
+    <div id="section2" class="accordion">
         <H3><i>Información</i></H3>
         <div data-aos="fade-up"  class="accordion-item">
             <button class="accordion-header">DRESS CODE</button>
@@ -214,14 +219,14 @@
             <button class="accordion-header">RSVP</button>
             <div class="accordion-content">
                 <p>No olvides confirmar asistencia antes del 04/12/2024. Completá un formulario por persona.</p> 
-                <a  class="boton" href="#">CONFIRMAR</a><br> <br> <br>
+                <a  class="boton" href="https://docs.google.com/forms/d/e/1FAIpQLSe-maDNvlU952yO2ByGrbj4tK0nwbPo2yJvkSEaj0bpXHaVNw/viewform?usp=sf_link">CONFIRMAR</a><br> <br> <br>
 
             </div>
         </div>
   <br>
     </div>
 
-<div class="redes">
+<div id="section3"  class="redes">
     <img data-aos="fade-up" src="./IMAGENES/flower-2-1-800x373.png" alt="">
 <h3 data-aos="fade-up" >La fiesta la haces vos</h3>
 <p data-aos="fade-up" >No nos queremos perder de nada, usa nuestro hashtag y ayudanos a elegir la música de la noche.</p>
@@ -317,5 +322,7 @@
         }
     }, 1000);
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
 </body>
 </html>

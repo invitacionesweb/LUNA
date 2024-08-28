@@ -173,27 +173,62 @@
         <div class="accordion-item">
             <button class="accordion-header">DRESS CODE</button>
             <div class="accordion-content">
-                <p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                <p>Elegante. Recordá que el blanco es exclusivo para la novia. Inspirate con nuestro tablero de pinterest</p> 
+                <a class="boton" href="#">PINTEREST</a><br> <br> <br>
+
             </div>
         </div>
 
         <div class="accordion-item">
             <button class="accordion-header">MESA DE REGALOS</button>
             <div class="accordion-content">
-                <p>Insert lodging recommendations here.</p>
+                <p>Tu presencia es lo más importante, pero si queres hacernos un regalo, podes ayudarnos con nuestra luna de miel.
+
+                </p>
+                <div class="gift-block">
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('12345123451234512345')">CBU LUNA</div>
+                    </div>
+                    
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('estoesunejemplo')">ALIAS LUNA</div>
+                    </div>
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('12345123451234512345')">CBU MARCOS</div>
+                    </div>
+                    
+                    <div class="gift-box">
+                        <div class="boton" onclick="copyToClipboard('estoesunejemplo')">ALIAS MARCOS</div>
+                    </div>
+                    
+                </div>
+                <p >Hace click para copiar los datos de nuestra cuenta.</p>
+                <br>
             </div>
         </div>
 
         <div class="accordion-item">
             <button class="accordion-header">RSVP</button>
             <div class="accordion-content">
-                <p>Insert dress code information here.</p>
+                <p>No olvides confirmar asistencia antes del xx/xx/xxxx. Completá un formulario por persona.</p> 
+                <a class="boton" href="#">CONFIRMAR</a><br> <br> <br>
+
             </div>
         </div>
-  
+  <br>
     </div>
 
+<div class="redes">
+    <img data-aos="fade-up" src="./IMAGENES/flower-2-1-800x373.png" alt="">
+<h3>La fiesta la haces vos</h3>
+<p>No nos queremos perder de nada, etiquetanos y ayudanos a elegir la música de la noche.</p>
+<div class="redes-botones">
+    <a class="boton" href="#">@LUNA</a>
+<a class="boton" href="#">@AAAA</a>
+<a class="boton" href="#">RECOMENDAR</a>
+</div>
 
+</div>
 
 
 
@@ -204,5 +239,18 @@
         AOS.init();
     </script>
 
+<script>
+   
+
+    function copyToClipboard(text) {
+       const tempInput = document.createElement("input");
+       document.body.appendChild(tempInput);
+       tempInput.value = text;
+       tempInput.select();
+       document.execCommand("copy");
+       document.body.removeChild(tempInput);
+       alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+     }
+   </script>
 </body>
 </html>

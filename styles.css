@@ -129,7 +129,7 @@ nav {
 }
 
 .hero {
-    background-image: url('./IMAGENES/DSC07617.jpeg'); /* Placeholder for the background image */
+    background-image: url('./IMAGENES/inicio.jpeg'); /* Placeholder for the background image */
     background-size: cover;
     background-position: center;
     height: 95vh;
@@ -222,7 +222,7 @@ nav {
 .details .horarios {
     color: var(--color-secundario);
     font-family: var(--font-secundaria);
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
 }
 .countdown {
     display: flex;
@@ -340,7 +340,7 @@ nav {
     margin: auto;
 }
 .timeline .iconos {
-    width: 60vw;
+    width: auto;
     margin: auto;
     padding: auto;
     height: auto;
@@ -351,9 +351,10 @@ nav {
 }
 .iconos img {
     width: 94px;
+    margin: auto;
 }
 .lovestory {
-    height;
+
     background-color: var(--color-cuartro);
     width: 96vw;
     margin: auto;
@@ -588,7 +589,7 @@ footer img {
    
 
     .hero {
-        background-image: url('./FOTOS/backphone.png'); /* Placeholder for the background image */
+        background-image: url('./IMAGENES/inicio.jpeg'); /* Placeholder for the background image */
 
         padding-top: 60px; /* Agrega un poco más de espacio entre el logotipo y la imagen */
     }
